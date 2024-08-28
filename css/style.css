@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-primary);
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --color-primary: #151515;
+  --color-link: #a91d3a;
+  --color-hover-link: #c73659;
+  --font-size--link: 2.2rem;
+  --color-secondary: #eeeeee;
+  --font-size-title: 4rem;
+}
+
+/* Start Header */
+
+.header {
+  position: fixed;
+  padding: 0.7rem 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--color-primary);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .header__logo {
+  width: 14rem;
+}
+
+.header .container .header__nav {
+  padding: 1rem 1.5rem;
+}
+
+.header .container .header__nav .header__link {
+  margin: 0 1.5rem;
+  font-size: var(--font-size--link);
+  font-weight: 600;
+  color: var(--color-link);
+}
+
+.header .container .header__nav .header__link:hover,
+:focus {
+  color: var(--color-hover-link);
+}
+
+.header .container .header__hamb {
+  display: none;
+}
+
+/* End Header */
+
+/* Start Home */
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  background-color: rgba(21, 21, 21, 0.39);
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.home .home__img {
+  width: 100%;
+  display: block;
+}
+
+.home .home__block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80rem;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.home .home__block .home__title,
+.home__paragraph,
+.home__button {
+  color: var(--color-secondary);
+}
+
+.home .home__block .home__title {
+  font-size: var(--font-size-title);
+}
+
+/* End Home */
+
+/* Start Us */
+
+.us {
+  background-image: url(../img/latas.jpg);
+  background-size: cover;
+}
+
+.us .container .us__paragraph {
+  color: var(--color-secondary);
+}
+
+/* End Us */
+
+/* Start Us Services*/
+
+.services .container .service__block {
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+}
+
+.services .container .service__block .square {
+  padding-bottom: 56.25%;
+}
+
+.services .container .service__block .service__img .square__img {
+  width: 100%;
+}
+
+.services .container .service__block .service__content {
+  padding: 2rem;
+}
+
+.services .container .service__block .service__content .service__title {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.services .container .service__block .service__content .service__title,
+.service__paragraph,
+.service__button {
+  color: var(--color-secondary);
+}
+
+/* End Services */
+
+/* Start Gallery */
+
+.gallery .container__fluid .column {
+  padding: 0;
+}
+
+.gallery .container__fluid .square .gallery__title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 2.5rem;
+}
+
+.gallery .container__fluid .square .square__img {
+  filter: grayscale(1);
+}
+
+.gallery .container__fluid .square:hover .square__img {
+  filter: grayscale(0);
+}
+
+.gallery .container__fluid .square:hover .gallery__title {
+  display: none;
+}
+
+/* End Gallery*/
+
+/* Start Contact */
+
+.contact {
+  position: relative;
+}
+
+.contact .contact__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.contact .container {
+  position: relative;
+}
+
+.contact .container .contact__form {
+  padding: 4rem 3rem;
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  border: 0.1rem solid var(--color-link);
+}
+
+.contact .container .contact__form .contact__block {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.contact .container .contact__form .contact__block .contact__control,
+.contact__text {
+  color: var(--color-primary);
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  border: 0.1rem solid var(--color-link);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.contact
+  .container
+  .contact__form
+  .contact__block
+  .contact__control::placeholder,
+.contact__text::placeholder {
+  color: var(--color-link);
+}
+
+.contact .container .contact__form .contact__block .contact__control {
+  height: 4rem;
+}
+
+.contact .container .contact__form .contact__block .contact__text {
+  height: 10rem;
+}
+
+.contact .container .contact__form .contact__block .contact__button {
+  color: var(--color-secondary);
+}
+
+/*End Contact*/
+
+/* Start Footer*/
+
+.footer {
+  color: var(--color-secondary);
+}
+
+.footer .container .footer__logo {
+  width: 100%;
+}
+
+.footer .container .footer__list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer .container .footer__list .footer__link {
+  margin-bottom: 0.7rem;
+}
+
+.footer .container .footer__subtitle {
+  font-size: 2.2rem;
+}
+
+.footer .container .footer__list .footer__link .footer__link__a {
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+
+.footer .container .ul__reds {
+  display: flex;
+  font-size: var(--font-size-title);
+
+  .ul__red__link {
+    margin: 0 0.75rem;
+    color: var(--color-secondary);
+  }
+
+  .ul__red__link:hover {
+    font-size: 4.25rem;
+  }
+}
+
+.footer .footer__bar {
+  background-color: var(--color-link);
+  padding: 0.5rem;
+  margin-bottom: -6rem;
+}
+
+.footer .footer__bar .footer__bar__pag {
+  text-align: center;
+}

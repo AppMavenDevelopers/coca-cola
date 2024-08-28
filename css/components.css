@@ -1,0 +1,44 @@
+/* Texto Parrafo */
+
+.paragraph {
+  text-align: justify;
+  font-size: 2.5rem;
+  font-family: 600;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  background-color: var(--color-link);
+}
+
+.button:hover {
+  transform: translate(-0.2rem);
+  box-shadow: 0rem 0.6rem 0.8rem rgba(0, 0, 0, 0.15);
+  background-color: var(--color-hover-link);
+}
+
+/* Sqare Perfect*/
+
+.square {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.square .square__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

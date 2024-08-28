@@ -1,0 +1,43 @@
+.container {
+  width: 114rem;
+  margin: 0 auto;
+}
+
+.container,
+.container__fluid {
+  padding: 0 1.5rem;
+}
+
+.container__fluid {
+  width: 100%;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+}
+
+.column {
+  padding: 0 1.5rem;
+}
+
+.column__25 {
+  width: 25%;
+}
+
+.column__33 {
+  width: 33.33%;
+}
+
+.column__41 {
+  width: 41.66%;
+}
+
+.push__58 {
+  margin-left: 58.33%;
+}
