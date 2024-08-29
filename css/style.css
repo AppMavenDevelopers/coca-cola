@@ -298,7 +298,7 @@ li {
 .footer .container .footer__list .footer__link .footer__link__a,
 .footer .container .footer__list .footer__link .footer__link__c {
   color: var(--color-secondary);
-  font-size: 2rem;
+  font-size: var(--font-size--link);
   letter-spacing: 0.05rem;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }

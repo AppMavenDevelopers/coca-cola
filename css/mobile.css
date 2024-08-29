@@ -80,7 +80,16 @@
 
   .home .home__block {
     width: 90%;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+  }
+
+  .home .home__block .home__title {
+    font-size: 2.5rem;
+  }
+
+  .home .home__block .home__paragraph,
+  .home__button {
+    font-size: 2rem;
   }
 
   /* Start Services */
