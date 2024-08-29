@@ -123,7 +123,7 @@ li {
 }
 
 .home .home__block .home__title .home__title__brand {
-  color: var(--color-primary);
+  color: var(--color-hover-link);
   -webkit-text-stroke: 0.1rem var(--color-secondary);
 }
 
@@ -295,9 +295,24 @@ li {
   font-size: 2.2rem;
 }
 
-.footer .container .footer__list .footer__link .footer__link__a {
+.footer .container .footer__list .footer__link .footer__link__a,
+.footer .container .footer__list .footer__link .footer__link__c {
   color: var(--color-secondary);
   font-size: 2rem;
+  letter-spacing: 0.05rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.footer .container .footer__list .footer__link .footer__link__a:hover,
+.footer .container .footer__list .footer__link .footer__link__a:focus {
+  color: var(--color-hover-link); /* Color al pasar el cursor o enfocar */
+  border-bottom: 2px solid var(--color-hover-link); /* Borde inferior visible al interactuar */
+  transform: scale(1.05); /* Ligero aumento de tamaño en hover/focus */
+}
+
+.footer .container .footer__list .footer__link .footer__link__a:active {
+  color: var(--color-primary); /* Color al hacer clic */
+  border-bottom: 2px solid var(--color-primary); /* Borde inferior al hacer clic */
 }
 
 .footer .container .ul__reds {

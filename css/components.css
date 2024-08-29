@@ -4,25 +4,49 @@
   font-size: var(--font-size--paragraph);
   font-family: var(--font-famely-kanit);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .title {
-  font-family: var(--font-famely--opensat);
-  font-style: normal;
   font-weight: 700;
+  text-indent: 5rem;
+  letter-spacing: 0.07rem;
+  text-shadow: 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 1);
 }
 
 .subtitle {
   font-weight: 500;
+  letter-spacing: 0.044rem;
+  text-shadow: 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.7);
+}
+
+.navder {
+  letter-spacing: 0.03em;
+}
+
+.navder:hover,
+.navder:focus {
+  text-decoration: underline;
+  letter-spacing: 0.05rem;
+  opacity: 0.8;
+}
+
+.title,
+.subtitle,
+.navder {
+  font-style: normal;
+  font-family: var(--font-famely--opensat);
 }
 
 .button {
   padding: 1rem 2rem;
   border: none;
   border-radius: 0.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: var(--font-size--paragraph);
+  font-family: var(--font-size--paragraph);
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -42,6 +66,9 @@
   position: relative;
   width: 100%;
   padding-bottom: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .square .square__img {
@@ -52,4 +79,11 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+}
+
+.square:hover .square__img,
+.square:focus .square__img {
+  transform: scale(1.1); /* La imagen crece ligeramente en hover/focus */
+  opacity: 0.9; /* Ligera transparencia en hover/focus */
 }
