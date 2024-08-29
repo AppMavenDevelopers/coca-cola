@@ -1,9 +1,20 @@
-/* Texto Parrafo */
+/* Text Paragraph */
 
 .paragraph {
-  text-align: justify;
-  font-size: 2.5rem;
-  font-family: 600;
+  font-size: var(--font-size--paragraph);
+  font-family: var(--font-famely-kanit);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.title {
+  font-family: var(--font-famely--opensat);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 500;
 }
 
 .button {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -29,8 +29,11 @@ li {
   --color-link: #a91d3a;
   --color-hover-link: #c73659;
   --font-size--link: 2.2rem;
+  --font-size--paragraph: 2.5rem;
   --color-secondary: #eeeeee;
   --font-size-title: 4rem;
+  --font-famely-kanit: "Kanit", sans-serif;
+  --font-famely--opensat: "Open Sans", sans-serif;
 }
 
 /* Start Header */
@@ -63,7 +66,7 @@ li {
   margin: 0 1.5rem;
   font-size: var(--font-size--link);
   font-weight: 600;
-  color: var(--color-link);
+  color: var(--color-secondary);
 }
 
 .header .container .header__nav .header__link:hover,
@@ -85,7 +88,7 @@ li {
 
 .home::before {
   content: "";
-  background-color: rgba(21, 21, 21, 0.39);
+  background-color: rgba(21, 21, 21, 0.5);
   top: 0;
   left: 0;
   position: absolute;
@@ -117,6 +120,15 @@ li {
 
 .home .home__block .home__title {
   font-size: var(--font-size-title);
+}
+
+.home .home__block .home__title .home__title__brand {
+  color: var(--color-primary);
+  -webkit-text-stroke: 0.1rem var(--color-secondary);
+}
+
+.home .home__block .home__paragraph {
+  text-align: justify;
 }
 
 /* End Home */
